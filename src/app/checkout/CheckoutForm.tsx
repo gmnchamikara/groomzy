@@ -1,17 +1,17 @@
 "use client";
 
+import Button from "@/components/Button";
+import Heading from "@/components/Headings";
 import { useCart } from "@/hooks/useCart";
 import { formatPrice } from "@/utils/formatprice";
 import {
-  useElements,
-  useStripe,
+  AddressElement,
   PaymentElement,
-  AddressElement
+  useElements,
+  useStripe
 } from "@stripe/react-stripe-js";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
-import Heading from "@/components/Headings";
-import Button from "@/components/Button";
 
 interface CheckoutFormProps {
   clientSecret: string;
