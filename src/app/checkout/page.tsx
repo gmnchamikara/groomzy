@@ -1,6 +1,6 @@
 
-import Container from "../components/Container";
-import FormWrap from "../components/FormWrap";
+import Container from "@/components/Container";
+import FormWrap from "@/components/FormWrap";
 import CheckOutClient from "./CheckoutClient";
 
 const CheckOut =  () => {

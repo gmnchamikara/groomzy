@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import CheckoutForm from "./CheckoutForm";
-import Button from "../components/Button";
+import Button from "@/components/Button";
 
 const stripePromise = loadStripe(
   process.env.NEXT_PUBLIC__STRIPE_PUBLISHABEL_KEY as string
