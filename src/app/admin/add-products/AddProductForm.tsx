@@ -1,12 +1,12 @@
 "use client";
 
-import Button from "@/app/components/Button";
-import Heading from "@/app/components/Headings";
-import CategoryInput from "@/app/components/inputs/CategoryInput";
-import CustomCheckBox from "@/app/components/inputs/CustomCheckBox";
-import Input from "@/app/components/inputs/Input";
-import SelectColor from "@/app/components/inputs/SelectColor";
-import TextArea from "@/app/components/inputs/TextArea";
+import Button from "@/components/Button";
+import Heading from "@/components/Headings";
+import CategoryInput from "@/components/inputs/CategoryInput";
+import CustomCheckBox from "@/components/inputs/CustomCheckBox";
+import Input from "@/components/inputs/Input";
+import SelectColor from "@/components/inputs/SelectColor";
+import TextArea from "@/components/inputs/TextArea";
 import firebaseApp from "@/libs/firebase";
 import { colors } from "@/utils/Colors";
 import { categories } from "@/utils/categories";
