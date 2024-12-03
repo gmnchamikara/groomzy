@@ -10,8 +10,8 @@ import {
 } from "@stripe/react-stripe-js";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
-import Heading from "../components/Headings";
-import Button from "../components/Button";
+import Heading from "@/components/Headings";
+import Button from "@/components/Button";
 
 interface CheckoutFormProps {
   clientSecret: string;

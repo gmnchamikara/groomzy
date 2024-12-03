@@ -1,7 +1,7 @@
 "use client";
-import Button from "@/app/components/Button";
-import Heading from "@/app/components/Headings";
-import Input from "@/app/components/inputs/Input";
+import Button from "@/components/Button";
+import Heading from "@/components/Headings";
+import Input from "@/components/inputs/Input";
 import { Safeuser } from "@/types";
 import { Rating } from "@mui/material";
 import { Order, Product, Review } from "@prisma/client";

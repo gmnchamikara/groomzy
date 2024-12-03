@@ -1,8 +1,8 @@
 "use client";
-import Button from "@/app/components/Button";
-import ProductImage from "@/app/components/products/ProductImage";
-import SetQuantity from "@/app/components/products/SetQuantity";
-import SetColor from "@/app/components/products/setColor";
+import Button from "@/components/Button";
+import ProductImage from "@/components/products/ProductImage";
+import SetQuantity from "@/components/products/SetQuantity";
+import SetColor from "@/components/products/setColor";
 import { useCart } from "@/hooks/useCart";
 import { Rating } from "@mui/material";
 import { useRouter } from "next/navigation";

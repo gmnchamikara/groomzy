@@ -1,7 +1,7 @@
 "Use Clinet";
 
-import Avatar from "@/app/components/Avatar";
-import Heading from "@/app/components/Headings";
+import Avatar from "@/components/Avatar";
+import Heading from "@/components/Headings";
 import { Rating } from "@mui/material";
 import moment from "moment";
 
