@@ -1,7 +1,7 @@
-import Container from "@/app/components/Container";
+import Container from "@/components/Container";
 import OrderDetails from "./orderDetails";
 import getOrderById from "@/actions/getOrderById";
-import NullData from "@/app/components/NullData";
+import NullData from "@/components/NullData";
 
 interface IPrams {
   orderId?: string;
