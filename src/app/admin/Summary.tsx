@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { Order, Product, User } from "@prisma/client";
-import Heading from "../components/Headings";
+import Heading from "@/components/Headings";
 import { formatPrice } from "@/utils/formatprice";
 import { formatNumber } from "@/utils/formatNumber";
 
