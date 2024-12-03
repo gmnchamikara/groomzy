@@ -1,7 +1,7 @@
 "use client";
 
-import Heading from "@/app/components/Headings";
-import Status from "@/app/components/Status";
+import Heading from "@/components/Headings";
+import Status from "@/components/Status";
 import { formatPrice } from "@/utils/formatprice";
 import { Order } from "@prisma/client";
 import moment from "moment";
