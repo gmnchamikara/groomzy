@@ -1,8 +1,8 @@
-import Container from "@/app/components/Container";
+import Container from "@/components/Container";
 import ProductDetails from "./productDetails";
 import ListRatings from "./ListRatings";
 import getProductById from "@/actions/getProductById";
-import NullData from "@/app/components/NullData";
+import NullData from "@/components/NullData";
 import { getCurrentUser } from "@/actions/getCurrentUser";
 import AddRating from "./AddRating";
 
