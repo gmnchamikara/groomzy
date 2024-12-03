@@ -10,11 +10,16 @@ export default async function getOrdersByUserId(userId : string) {
         createDate: "desc",
       },
       where: {
-        userId: userId
-      }
+        userId: userId,
+      },
     });
     return orders;
-  } catch (error: any) {
-    throw new Error(error);
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      console.error(error.message);
+    } else {
+      console.error("An unknown error occurred");
+    }
+    throw new Error("Failed to fetch graph data");
   }
 }

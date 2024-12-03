@@ -47,8 +47,12 @@ export default async function getproducts(params: IProductParams) {
       },
     });
     return products;
-  } catch (error: any) {
-    console.error("Error fetching products:", error);
-    throw new Error("Failed to fetch products.");
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      console.error(error.message);
+    } else {
+      console.error("An unknown error occurred");
+    }
+    throw new Error("Failed to fetch graph data");
   }
 }

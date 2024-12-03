@@ -8,13 +8,18 @@ export default async function getOrderById(params: IParams) {
     const { orderId } = params;
 
     const order = await prisma.order.findUnique({
-        where:{
-            id:orderId
-        }
-    })
-    if(!order) return null
-    return order
-  } catch (error: any) {
-    throw new (error)
+      where: {
+        id: orderId,
+      },
+    });
+    if (!order) return null;
+    return order;
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      console.error(error.message);
+    } else {
+      console.error("An unknown error occurred");
+    }
+    throw new Error("Failed to fetch graph data");
   }
 }
