@@ -43,20 +43,15 @@ export const CartContextProvider = (props: Props) => {
   // console.log("qty", cartTotalQty);
   // console.log("amount", cartTotalAmount);
 
-useEffect(() => {
-  const cartItems: string | null = localStorage.getItem("MugShopCartItems");
-  const cProducts: CartProductType[] | null = cartItems
-    ? JSON.parse(cartItems)
-    : null;
-  const eShopPaymentIntent: string | null =
-    localStorage.getItem("eShopPaymentIntent");
-  const paymentIntent: string | null = eShopPaymentIntent
-    ? JSON.parse(eShopPaymentIntent)
-    : null;
+  useEffect(() => {
+    const cartItems: any = localStorage.getItem("MugShopCartItems");
+    const cProducts: CartProductType[] | null = JSON.parse(cartItems);
+    const eShopPaymentIntent: any = localStorage.getItem("eShopPaymentIntent");
+    const paymentIntent: string | null = JSON.parse(eShopPaymentIntent);
 
-  setCartProducts(cProducts);
-  setPaymentIntent(paymentIntent);
-}, []);
+    setCartProducts(cProducts);
+    setPaymentIntent(paymentIntent);
+  }, []);
 
   useEffect(() => {
     const getTotals = () => {
@@ -168,16 +163,19 @@ useEffect(() => {
     [cartProducts]
   );
 
-const handleClearCart = useCallback(() => {
-  setCartProducts(null);
-  setCartTotalQty(0);
-  localStorage.setItem("MugShopCartItems", JSON.stringify(null));
-}, []);
+  const handleClearCart = useCallback(() => {
+    setCartProducts(null);
+    setCartTotalQty(0);
+    localStorage.setItem("MugShopCartItems", JSON.stringify(null));
+  }, [cartProducts]);
 
-const handleSetPaymentIntent = useCallback((val: string | null) => {
-  setPaymentIntent(val);
-  localStorage.setItem("eShopPaymentIntent", JSON.stringify(val));
-}, []);
+  const handleSetPaymentIntent = useCallback(
+    (val: string | null) => {
+      setPaymentIntent(val);
+      localStorage.setItem("eShopPaymentIntent", JSON.stringify(val));
+    },
+    [paymentIntent]
+  );
 
   const value = {
     cartTotalQty,

@@ -148,21 +148,24 @@ const AddProductForm = () => {
     await handleImageUploads();
     const productData = { ...data, images: uploadedImages };
     //console.log("productData", productData);
-    axios.post("/api/product", productData).then(() => {
-      toast.success("Product created");
-      setIsProductCreated(true);
-      router.refresh();
-    }).catch((error) => {
-      console.error(error);
-      toast.error('Something went wrong when saving product to db ')
-    }).finally(() => {
-      setIsLoading(false)
-    });
+    axios
+      .post("/api/product", productData)
+      .then(() => {
+        toast.success("Product created");
+        setIsProductCreated(true);
+        router.refresh();
+      })
+      .catch((error) => {
+        toast.error("Something went wrong when saving product to db ");
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
   };
 
   const category = watch("category");
 
-  const setCustomvalue = (id: string, value: number) => {
+  const setCustomvalue = (id: string, value: any) => {
     setValue(id, value, {
       shouldValidate: true,
       shouldDirty: true,
