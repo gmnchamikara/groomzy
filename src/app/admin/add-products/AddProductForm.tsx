@@ -153,6 +153,7 @@ const AddProductForm = () => {
       setIsProductCreated(true);
       router.refresh();
     }).catch((error) => {
+      console.error(error);
       toast.error('Something went wrong when saving product to db ')
     }).finally(() => {
       setIsLoading(false)
