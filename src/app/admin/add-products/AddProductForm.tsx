@@ -78,7 +78,7 @@ const AddProductForm = () => {
     //upload images to fb
     //save to mongo DB
     setIsLoading(true);
-    let uploadedImages: UploadedImageType[] = [];
+    const uploadedImages: UploadedImageType[] = [];
 
     if (!data.category) {
       setIsLoading(false);

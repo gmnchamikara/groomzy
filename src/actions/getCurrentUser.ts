@@ -12,12 +12,11 @@ export async function getCurrentUser() {
       return null;
     }
 
-
     const currentUser = await prisma.user.findUnique({
       where: {
         email: session?.user.email,
       },
-      include: {orders:true}
+      include: { orders: true },
     });
 
     if (!currentUser) {
@@ -28,10 +27,14 @@ export async function getCurrentUser() {
       ...currentUser,
       createdAt: currentUser.createdAt.toISOString(),
       updatedAt: currentUser.updatedAt.toISOString(),
-      emailVerified: currentUser.emailVerified?.toISOString() || null
+      emailVerified: currentUser.emailVerified?.toISOString() || null,
     };
-  } catch (error: any) {
-    console.error(error);
-    return null;
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      console.error(error.message);
+    } else {
+      console.error("An unknown error occurred");
+    }
+    throw new Error("Failed to fetch graph data");
   }
 }
