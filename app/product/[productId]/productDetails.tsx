@@ -109,6 +109,12 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
       />
       <div className="flex flex-col gap-1 text-slate-700 text-sm">
         <h2 className="text-3xl font-medium text-slate-700">{product.name}</h2>
+        <Horizontal />
+        <div className="text-justify text-xl">
+          <span className="font-semibold">Price : </span>
+          LKR. {product.price}.00
+        </div>
+        <Horizontal />
         <div className="flex items-center gap-2">
           <Rating value={productrating} readOnly />
           <div>{product.reviews.length} reviews</div>
