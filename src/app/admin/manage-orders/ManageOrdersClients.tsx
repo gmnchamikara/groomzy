@@ -43,7 +43,7 @@ const ManageOrdersClient: React.FC<ManageOrdersClientProps> = ({ orders }) => {
       };
     });
   }
-  let columns: GridColDef[] = [
+  const columns: GridColDef[] = [
     { field: "id", headerName: "ID", width: 220 },
     { field: "customer", headerName: "Customer Name", width: 130 },
     {
@@ -158,6 +158,7 @@ const ManageOrdersClient: React.FC<ManageOrdersClientProps> = ({ orders }) => {
         deliveryStatus: 'dispatched'
       })
       .then((res) => {
+        console.log(res);
         toast.success("Order Dispatched");
         router.refresh();
       })

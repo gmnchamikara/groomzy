@@ -7,14 +7,30 @@ import { Rating } from "@mui/material";
 
 import { useRouter } from "next/navigation";
 
+interface Review {
+  rating: number;
+}
+
+interface Image {
+  image: string;
+}
+
+interface ProductData {
+  id: string;
+  name: string;
+  price: number;
+  images: Image[];
+  reviews: Review[];
+}
+
 interface ProductCardProps {
-  data: any;
+  data: ProductData;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
   const router = useRouter();
   const productrating =
-    data.reviews.reduce((acc: number, item: any) => item.rating + acc, 0) /
+    data.reviews.reduce((acc: number, item: Review) => item.rating + acc, 0) /
     data.reviews.length;
 
   return (

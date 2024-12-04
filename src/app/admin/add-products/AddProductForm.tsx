@@ -162,7 +162,7 @@ const AddProductForm = () => {
 
   const category = watch("category");
 
-  const setCustomvalue = (id: string, value: any) => {
+  const setCustomvalue = (id: string, value: number) => {
     setValue(id, value, {
       shouldValidate: true,
       shouldDirty: true,

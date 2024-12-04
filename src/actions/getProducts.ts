@@ -13,7 +13,7 @@ export default async function getproducts(params: IProductParams) {
       searchString = "";
     }
 
-    let query: any = {};
+    const query: any = {};
 
     if (category) {
       query.category = category;
