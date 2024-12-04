@@ -12,7 +12,7 @@ export const products = [
         color: "White",
         colorCode: "#FFFFFF",
         image:
-          //"https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1688622161445-iphone14-white.png?alt=media&token=fe2065e5-fdfe-4a6f-baa6-380b5fad90b8",
+          //"https://firebasestorage.googleapis.com/v0/b/ecommercGroomzy-cc542.appspot.com/o/products%2F1688622161445-iphone14-white.png?alt=media&token=fe2065e5-fdfe-4a6f-baa6-380b5fad90b8",
           "https://picsum.photos/200",
       },
       {
@@ -37,7 +37,7 @@ export const products = [
         color: "Black",
         colorCode: "#000000",
         image:
-          //"https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1688529886610-black-logitech-keyboard.jpg?alt=media&token=353aa276-1316-4e50-bc26-8e3828fe6cdd",
+          //"https://firebasestorage.googleapis.com/v0/b/ecommercGroomzy-cc542.appspot.com/o/products%2F1688529886610-black-logitech-keyboard.jpg?alt=media&token=353aa276-1316-4e50-bc26-8e3828fe6cdd",
           "https://picsum.photos/400",
       },
     ],
@@ -78,21 +78,21 @@ export const products = [
         color: "Black",
         colorCode: "#000000",
         image:
-          //"https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1686386605041-iphone12-black.jpg?alt=media&token=32abf316-ddf6-4870-9e1e-a7c884b750d6",
+          //"https://firebasestorage.googleapis.com/v0/b/ecommercGroomzy-cc542.appspot.com/o/products%2F1686386605041-iphone12-black.jpg?alt=media&token=32abf316-ddf6-4870-9e1e-a7c884b750d6",
           "https://picsum.photos/500",
       },
       {
         color: "Blue",
         colorCode: " #0000FF",
         image:
-          //"https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1686386607274-iphone12-blue.jpg?alt=media&token=e83a9b13-86b6-4518-9f1e-8ddef12ba9a2",
+          //"https://firebasestorage.googleapis.com/v0/b/ecommercGroomzy-cc542.appspot.com/o/products%2F1686386607274-iphone12-blue.jpg?alt=media&token=e83a9b13-86b6-4518-9f1e-8ddef12ba9a2",
           "https://picsum.photos/900",
       },
       {
         color: "Red",
         colorCode: "#FF0000",
         image:
-          //"https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1686386608652-iphone12-red.jpg?alt=media&token=603a9e86-5b8c-4f8d-b61c-c1c77e60e954",
+          //"https://firebasestorage.googleapis.com/v0/b/ecommercGroomzy-cc542.appspot.com/o/products%2F1686386608652-iphone12-red.jpg?alt=media&token=603a9e86-5b8c-4f8d-b61c-c1c77e60e954",
           "https://picsum.photos/200",
       },
     ],
@@ -154,7 +154,7 @@ export const products = [
         color: "Graphite",
         colorCode: " #383838",
         image:
-          //"https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1688529379028-logitech-graphite-mouse.jpg?alt=media&token=f9dfba29-832f-4c58-88c6-a7a0ae6b22bf",
+          //"https://firebasestorage.googleapis.com/v0/b/ecommercGroomzy-cc542.appspot.com/o/products%2F1688529379028-logitech-graphite-mouse.jpg?alt=media&token=f9dfba29-832f-4c58-88c6-a7a0ae6b22bf",
           "https://picsum.photos/200",
       },
     ],
@@ -174,14 +174,14 @@ export const products = [
         color: "Black",
         colorCode: "#000000",
         image:
-          //"https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1688041293609-watch-black.jpg?alt=media&token=270f918c-d9f5-41a2-ad32-45d5f3c66bf0",
+          //"https://firebasestorage.googleapis.com/v0/b/ecommercGroomzy-cc542.appspot.com/o/products%2F1688041293609-watch-black.jpg?alt=media&token=270f918c-d9f5-41a2-ad32-45d5f3c66bf0",
           "https://picsum.photos/200",
       },
       {
         color: "Silver",
         colorCode: "#C0C0C0",
         image:
-          //"https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1688041295389-watch-silver.jpg?alt=media&token=7341e7f0-5c29-4f91-a7e3-57e50faafb74",
+          //"https://firebasestorage.googleapis.com/v0/b/ecommercGroomzy-cc542.appspot.com/o/products%2F1688041295389-watch-silver.jpg?alt=media&token=7341e7f0-5c29-4f91-a7e3-57e50faafb74",
           "https://picsum.photos/200",
       },
     ],
